@@ -3,7 +3,7 @@ on:
  # push:
   pull_request:
  # schedule:
- #   - cron: '*/5 * * * *'
+ #   - cron: '*/5 * * * *'     --used to schedule a run based on cron
   workflow_dispatch:
 jobs:
    echo:
