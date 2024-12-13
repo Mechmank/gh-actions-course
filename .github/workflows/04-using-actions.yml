@@ -14,4 +14,4 @@ jobs:
               run: |
                 npm install
                 npm ci
-              working-directory: 04-using-actions/react-app/
+              working-directory: 04-using-actions/react-app
