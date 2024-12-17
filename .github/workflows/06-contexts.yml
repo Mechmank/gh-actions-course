@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       my_job_var: 'job'
-   #   my_overwritten_var: 'job'
+      my_overwritten_var: 'job'
 
     steps:
       - name: Display information
@@ -37,5 +37,5 @@ jobs:
       - name: Printing Env variable
         run: | 
           echo "This tha value of my_overwritten_var: ${{ env.my_overwritten_var }}"
-          echo "This tha value of my_overwritten_var: ${{ env.my_job_var }}"
-          echo "This tha value of my_overwritten_var: ${{ env.my_workflow_var }}"
+          echo "This tha value of my_job_var: ${{ env.my_job_var }}"
+          echo "This tha value of my_workflow_var: ${{ env.my_workflow_var }}"
