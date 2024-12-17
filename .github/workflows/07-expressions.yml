@@ -1,6 +1,6 @@
 name: 07 - Expressions
 on:
-  push:
+  #push:
   workflow_dispatch:
     inputs:
       debug:
@@ -18,7 +18,7 @@ jobs:
           echo "Commit SHA ${{ github.sha }}"
           echo "Runner OS ${{ runner.os }}"
       - name: '[debug] Print when triggered from main'
-        if: ${{ inputs.debug && github.ref == '/refs/head/main' }}
+        if: ${{ inputs.debug && github.ref == 'refs/head/main' }}
         run: | 
           echo "I was triggered from main"
       - name: Common print
