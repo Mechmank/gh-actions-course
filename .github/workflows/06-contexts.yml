@@ -37,5 +37,5 @@ jobs:
       - name: Printing Env variable
         run: | 
           echo "This tha value of my_overwritten_var: ${{ env.my_overwritten_var }}"
-          echo "This tha value of my_overwritten_var: ${{ my_job_var }}"
-          echo "This tha value of my_overwritten_var: ${{ my_workflow_var }}"
+          echo "This tha value of my_overwritten_var: ${{ env.my_job_var }}"
+          echo "This tha value of my_overwritten_var: ${{ env.my_workflow_var }}"
