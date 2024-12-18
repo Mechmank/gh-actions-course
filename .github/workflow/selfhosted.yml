@@ -1,0 +1,8 @@
+name: Testing on self hosted runner
+on: workflow_dispatch
+jobs:
+  test_job:
+    runs-on: self-hosted
+    steps:
+      - name: Test run
+        run: echo "Hello world!!" | tee -a /tmp/output
