@@ -2,10 +2,10 @@ name: 10-Controling the Executio flow
 on:
   workflow_dispatch:
     inputs:
-    pass-unit-tests:
-      type: boolean
-      description: Whether unittests will pass or not
-      default: true
+      pass-unit-tests:
+        type: boolean
+        description: Whether unittests will pass or not
+        default: true
 
 
 jobs:
