@@ -1,6 +1,6 @@
 name: 09-Using Fuctions
 on: 
-  Pull_request:
+  #Pull_request:
   workflow_dispatch:
 
 jobs:
