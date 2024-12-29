@@ -33,4 +33,4 @@ jobs:
       - build
     steps:
       - name: Deploy
-        run: echo "Deploying to ${{ inputs.targer }}"
+        run: echo "Deploying to ${{ inputs.target }}"
